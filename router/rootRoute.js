@@ -12,6 +12,7 @@ rootRoute.get('/', (req, res) => {
       {
         path: '/api/v1/el',
         method: 'GET',
+        auth: 'x-api-key',
         description: 'Hämtar elpriser för ett givet datum och zon',
         query: {
           year: 'År (standard: innevarande år)',
