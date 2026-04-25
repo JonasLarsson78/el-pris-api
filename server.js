@@ -15,9 +15,9 @@ server.use(express.json())
 
 //Routes
 server.use(rootRoute)
-server.use('/api/v1',elRoute)
+server.use('/api/v1', elRoute)
 
 // Dev Server
 server.listen(PORT, () => {
-  console.log(`Server runs on http://localhost:${PORT}`);
+  console.log(`Server runs on http://localhost:${PORT}`)
 })

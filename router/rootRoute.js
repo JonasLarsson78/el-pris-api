@@ -1,8 +1,8 @@
-import { Router } from "express"
+import { Router } from 'express'
 const rootRoute = Router()
 
 rootRoute.get('/', (req, res) => {
-  res.json({message: 'Root Route'})
+  res.json({ message: 'Root Route' })
 })
 
-export {rootRoute}
+export { rootRoute }
