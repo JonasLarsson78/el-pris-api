@@ -10,7 +10,7 @@ rootRoute.get('/', (req, res) => {
     description: 'Hämtar elpriser per kvart från elprisetjustnu.se',
     endpoints: [
       {
-        path: 'api/v1/el',
+        path: '/api/v1/el',
         method: 'GET',
         description: 'Hämtar elpriser för ett givet datum och zon',
         query: {
@@ -18,7 +18,7 @@ rootRoute.get('/', (req, res) => {
           date: 'Datum i format MM-DD (standard: dagens datum)',
           zone: 'Priszon: SE1, SE2, SE3, SE4 (standard: SE4)',
         },
-        example: 'api/v1/el?year=2026&date=04-25&zone=SE3',
+        example: '/api/v1/el?year=2026&date=04-25&zone=SE3',
       },
     ],
   })
