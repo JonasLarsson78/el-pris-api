@@ -6,6 +6,7 @@ rootRoute.get('/', (req, res) => {
     message: 'El Pris API',
     version: '1.0.0',
     status: 'ok',
+    baseUrl: 'https://el-pris-api.vercel.app',
     timestamp: new Date().toISOString(),
     description: 'Hämtar elpriser per kvart från elprisetjustnu.se',
     endpoints: [
